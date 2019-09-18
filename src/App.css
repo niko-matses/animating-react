@@ -20,6 +20,7 @@ body {
 }
 
 .App {
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -191,4 +192,28 @@ h1 {
 
 .full-height {
   height: 100vh;
+}
+nav, nav ul, .nav-items {
+  overflow: hidden;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav li {
+  padding: .5em 0;
+  letter-spacing: 1px;
+}
+.nav-items {
+  margin: 2em 1em;
+  list-style: none;
+  text-align: right;
+}
+.menu-button {
+  position: relative;
+  top: 1em;
+  cursor: pointer;
+  padding-right: 1em;
+  position: absolute;
+  right: 0;
 }

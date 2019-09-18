@@ -17,7 +17,8 @@ const Toggle = () => {
           color
         }}
       >
-        Hello</animated.h1>
+        Hello
+      </animated.h1>
       <button onClick={() => setToggle(!isToggled)}>Toggle</button>
     </div>
   );
