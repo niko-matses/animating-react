@@ -1,4 +1,5 @@
 import React from 'react';
+import Toggle from './toggle';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -11,6 +12,9 @@ const App = () => {
         <img src={logo} className="logo" />
         <button className="menu-button">Menu</button>
       </header>
+      <main>
+        <Toggle />
+      </main>
     </animated.div>
   );
 }
