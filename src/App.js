@@ -18,10 +18,10 @@ const App = () => {
         <img src={logo} className="logo" />
         <button onClick={() => setNavOpen(!isNavOpen)} className="menu-button">Menu</button>
       </header>
-      {/* <Nav style={navAnimation} /> */}
+      <Nav style={navAnimation} />
       <main>
         <Toggle />
-        <Checkout isOpen={isNavOpen} />
+        {/* <Checkout isOpen={isNavOpen} /> */}
 
       </main>
     </animated.div>
