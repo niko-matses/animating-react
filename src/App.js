@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Toggle from './toggle';
 import Nav from './Nav';
+import Checkout from './Checkout';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -17,9 +18,10 @@ const App = () => {
         <img src={logo} className="logo" />
         <button onClick={() => setNavOpen(!isNavOpen)} className="menu-button">Menu</button>
       </header>
-      <Nav style={navAnimation} />
+      {/* <Nav style={navAnimation} /> */}
       <main>
-        {/* <Toggle /> */}
+        <Toggle />
+        <Checkout isOpen={isNavOpen} />
 
       </main>
     </animated.div>
