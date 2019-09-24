@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Routes from './Routes';
+//import Routes from './Routes';
 import Nav from './Nav';
-import Checkout from './Checkout';
+import Modal from './Modal';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -20,7 +20,8 @@ const App = () => {
       </header>
       <Nav style={navAnimation} />
       <main>
-        <Routes />
+        <Modal />
+        {/* <Routes /> */}
       </main>
     </animated.div>
   );
