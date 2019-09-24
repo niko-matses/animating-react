@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 //import Routes from './Routes';
 import Nav from './Nav';
 import Checkout from './Checkout';
+import Accordion from './Accordion';
 import Modal from './Modal';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
@@ -25,6 +26,7 @@ const App = () => {
       <main>
         <Checkout isOpen={isNavOpen} />
         <Modal />
+        <Accordion />
         {/* <Routes /> */}
       </main>
     </animated.div>
