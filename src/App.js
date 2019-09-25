@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 //import Routes from './Routes';
 import Nav from './Nav';
-import Checkout from './Checkout';
 import Accordion from './Accordion';
 import Modal from './Modal';
-import Waypoints from './Waypoints';
+import Routes from './Routes';
+import Gesture from './Gesture';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -23,13 +23,14 @@ const App = () => {
 
       </header>
 
-      {/* <Nav style={navAnimation} /> */}
+      <Nav style={navAnimation} />
       <main>
-        <Checkout isOpen={isNavOpen} />
+        {/* <Checkout isOpen={isNavOpen} /> */}
         <Modal />
         <Accordion />
-        {/* <Routes /> */}
-        <Waypoints />
+        <Gesture />
+        <Routes />
+        {/* <Waypoints /> */}
       </main>
     </animated.div>
   );
