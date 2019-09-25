@@ -1,5 +1,6 @@
+//'rfc' + Tab w/ react-snippets extension
 import React, { useState } from 'react';
-//import Routes from './Routes';
+import Routes from './Routes';
 import Nav from './Nav';
 import Accordion from './Accordion';
 import Modal from './Modal';
