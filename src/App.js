@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Accordion from './Accordion';
 import Modal from './Modal';
 import Routes from './Routes';
-import Gesture from './Gesture';
+import Boxes from './Boxes';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -16,7 +16,7 @@ const App = () => {
   });
   const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
   return (
-    <animated.div className="App" style={fade}>
+    <animated.div className="App">
       <header className="App-header">
         <img src={logo} className="logo" />
         <button onClick={() => setNavOpen(!isNavOpen)} className="menu-button">Menu</button>
@@ -26,10 +26,11 @@ const App = () => {
       <Nav style={navAnimation} />
       <main>
         {/* <Checkout isOpen={isNavOpen} /> */}
-        <Modal />
-        <Accordion />
-        <Gesture />
-        <Routes />
+        {/* <Modal /> */}
+        <Boxes />
+        {/* <Accordion /> */}
+        {/* <Gesture /> */}
+        {/* <Routes /> */}
         {/* <Waypoints /> */}
       </main>
     </animated.div>
