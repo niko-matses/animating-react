@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Checkout from './Checkout';
 import Accordion from './Accordion';
 import Modal from './Modal';
+import Waypoints from './Waypoints';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
@@ -28,6 +29,7 @@ const App = () => {
         <Modal />
         <Accordion />
         {/* <Routes /> */}
+        <Waypoints />
       </main>
     </animated.div>
   );

@@ -14,7 +14,7 @@ const Accordion = () => {
       <h1><button onClick={() => toggle(!on)}>Toggle</button></h1>
       <animated.div style={collapse}>
         <div {...bind} className="accordion">
-          <p>Hello, I'm in the accordion</p>
+          <h2>Hello, I'm in the accordion, Hello, I'm in the accordion, Hello, I'm in the accordion, Hello, I'm in the accordion, Hello, I'm in the accordion, Hello, I'm in the accordion</h2>
         </div>
       </animated.div>
     </div>
