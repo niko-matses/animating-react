@@ -4,7 +4,6 @@ import Routes from './Routes';
 import Nav from './Nav';
 import Accordion from './Accordion';
 import Modal from './Modal';
-import Routes from './Routes';
 import Boxes from './Boxes';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
